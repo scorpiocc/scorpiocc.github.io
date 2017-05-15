@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -92,15 +92,15 @@
 <meta name="description" content="执行Maven Install打包的时候，提示以下警告信息：1[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent! 解决方法：打开项目属性》Resources，按下图修改。   保存后重新执行Maven Install 发现警告依然">
 <meta name="keywords" content="Java后台开发,Maven">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Maven警告解决:Using platform encoding (UTF-8 actually)">
+<meta property="og:title" content="Maven警告解决:Using platform encoding （UTF-8 actually）">
 <meta property="og:url" content="http://yoursite.com/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/index.html">
 <meta property="og:site_name" content="做自己的太阳">
 <meta property="og:description" content="执行Maven Install打包的时候，提示以下警告信息：1[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent! 解决方法：打开项目属性》Resources，按下图修改。   保存后重新执行Maven Install 发现警告依然">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2759587-c95128cccfb33d6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2759587-8c313c76948784b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-05-09T02:45:04.559Z">
+<meta property="og:updated_time" content="2017-05-15T07:08:07.426Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Maven警告解决:Using platform encoding (UTF-8 actually)">
+<meta name="twitter:title" content="Maven警告解决:Using platform encoding （UTF-8 actually）">
 <meta name="twitter:description" content="执行Maven Install打包的时候，提示以下警告信息：1[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent! 解决方法：打开项目属性》Resources，按下图修改。   保存后重新执行Maven Install 发现警告依然">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/2759587-c95128cccfb33d6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
@@ -110,7 +110,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
     fancybox: true,
     motion: true,
@@ -136,7 +136,7 @@
 
 
 
-  <title> Maven警告解决:Using platform encoding (UTF-8 actually) | 做自己的太阳 </title>
+  <title> Maven警告解决:Using platform encoding （UTF-8 actually） | 做自己的太阳 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -340,7 +340,7 @@
             
             
               
-                Maven警告解决:Using platform encoding (UTF-8 actually)
+                Maven警告解决:Using platform encoding （UTF-8 actually）
               
             
           </h1>
@@ -405,7 +405,7 @@
 
           
           
-             <span id="/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/" class="leancloud_visitors" data-flag-title="Maven警告解决:Using platform encoding (UTF-8 actually)">
+             <span id="/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/" class="leancloud_visitors" data-flag-title="Maven警告解决:Using platform encoding （UTF-8 actually）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -445,6 +445,11 @@
 <h2 id="如果还是存在警告，则需要在中添加标签："><a href="#如果还是存在警告，则需要在中添加标签：" class="headerlink" title="如果还是存在警告，则需要在中添加标签："></a>如果还是存在警告，则需要在<project>中添加<properties>标签：</properties></project></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;properties&gt;</div><div class="line">         &lt;project.build.sourceEncoding&gt;</div><div class="line">             UTF-8</div><div class="line">         &lt;/project.build.sourceEncoding&gt;</div><div class="line">&lt;/properties&gt;</div></pre></td></tr></table></figure>
 <p><strong>最终 Maven Install 警告就消失了。</strong></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2759587-8c313c76948784b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编码警告消失"></p>
+<blockquote>
+<p>本文作者： Scorpip_cc</p>
+<p>本文链接： <a href="http://scorpiocc.cn/2017/05/04/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Maven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20（UTF-8 actually）" target="_blank" rel="external">原文博客地址</a></p>
+<p>版权声明： 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" rel="external">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！</p>
+</blockquote>
 
       
     </div>
@@ -487,6 +492,21 @@
     <div>
       
         
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Scorpio_cc
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://yoursite.com/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/" title="Maven警告解决:Using platform encoding （UTF-8 actually）">http://yoursite.com/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
 
       
     </div>
@@ -751,7 +771,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -846,6 +866,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>

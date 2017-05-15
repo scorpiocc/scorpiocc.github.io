@@ -12,9 +12,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Maven警告解决:Using platform encoding (UTF-8 actually)]]></title>
+    <title><![CDATA[Maven警告解决:Using platform encoding （UTF-8 actually）]]></title>
     <url>%2F2017%2F05%2F04%2FJava%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91%2FMaven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20(UTF-8%20actually)%2F</url>
-    <content type="text"><![CDATA[执行Maven Install打包的时候，提示以下警告信息：1[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent! 解决方法：打开项目属性》Resources，按下图修改。 保存后重新执行Maven Install 发现警告依然存在，原来是理解错误错误了，应该修改Maven的配置文件中关于编码的配置 1&lt;encoding&gt;utf-8&lt;/encoding&gt;： 完整示例：pom.xml 12345678910&lt;plugin&gt; &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt; &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt; &lt;version&gt;3.0&lt;/version&gt; &lt;configuration&gt; &lt;encoding&gt;utf-8&lt;/encoding&gt; &lt;source&gt;1.8&lt;/source&gt; &lt;target&gt;1.8&lt;/target&gt; &lt;/configuration&gt;&lt;/plugin&gt; 如果还是存在警告，则需要在中添加标签：12345&lt;properties&gt; &lt;project.build.sourceEncoding&gt; UTF-8 &lt;/project.build.sourceEncoding&gt;&lt;/properties&gt; 最终 Maven Install 警告就消失了。]]></content>
+    <content type="text"><![CDATA[执行Maven Install打包的时候，提示以下警告信息：1[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent! 解决方法：打开项目属性》Resources，按下图修改。 保存后重新执行Maven Install 发现警告依然存在，原来是理解错误错误了，应该修改Maven的配置文件中关于编码的配置 1&lt;encoding&gt;utf-8&lt;/encoding&gt;： 完整示例：pom.xml 12345678910&lt;plugin&gt; &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt; &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt; &lt;version&gt;3.0&lt;/version&gt; &lt;configuration&gt; &lt;encoding&gt;utf-8&lt;/encoding&gt; &lt;source&gt;1.8&lt;/source&gt; &lt;target&gt;1.8&lt;/target&gt; &lt;/configuration&gt;&lt;/plugin&gt; 如果还是存在警告，则需要在中添加标签：12345&lt;properties&gt; &lt;project.build.sourceEncoding&gt; UTF-8 &lt;/project.build.sourceEncoding&gt;&lt;/properties&gt; 最终 Maven Install 警告就消失了。 本文作者： Scorpip_cc 本文链接： 原文博客地址 版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 3.0 CN 许可协议。转载请注明出处！]]></content>
       <categories>
         <category>Java报错解决</category>
       </categories>
