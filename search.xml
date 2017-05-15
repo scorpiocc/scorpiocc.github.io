@@ -5,7 +5,7 @@
     <url>%2F2017%2F05%2F05%2FJava%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%2F%E3%80%90Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E3%80%91Java%E9%9B%86%E5%90%88%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93%2F</url>
     <content type="text"><![CDATA[一、Collection(单列集合)List 有序 可重复123ArrayList 底层是数组 查找快，增删慢 线程不安全，效率高LinkedList 底层是链表 查找慢，增删快Vector 底层是数组 查找快，增删慢 线程安全，效率低 Set 无序 不可重复1234567891011HashSet 底层是哈希表 如何保证元素的唯一性 重写元素的hashcode和equals方法 hashcode相同 判断equals方法 返回true 不填加 返回false 添加 hashcode不相同 直接添加 TreeSet 底层是二叉树 如何保证元素的唯一性和排序 1、自然排序(元素具备比较特性) ----实现Comparable接口 2、使用排序器(集合具备比较特性) ---- 实现Comparator接口 二、Map(双列集合) 数据结构只针对键有效1234567891011HashMap 底层是哈希表 如何保证键的唯一性 重写元素的hashcode和equals方法 hashcode相同 判断equals方法 返回true 不填加 返回false 添加 hashcode不相同 直接添加 TreeMap 底层是二叉树 如何保证键的唯一性和排序 1、自然排序(元素具备比较特性) ----实现Comparable接口 2、使用排序器(集合具备比较特性) ---- 实现Comparator接口 2、功能12345678Collection add(Object obj) remove(Object obj) contains(obj) size() iterator() List add(int index,Object obj) remove(int index) get(index) setSet Map put(key,value) remove(key) get(key) containsValue(value) containsKey(key) get(key) keySet() values() entrySet() 3、遍历12345678List 1、迭代器 使用迭代器遍历集合时，不能通过集合对象去修改集合元素 2、for循环 3、增强for循环 仅仅是遍历集合，任选一种， 如果要对集合元素进行操作，使用后面两种 跟集合索引相关的操作，使用for循环 123Set 1、迭代器 2、增强for循环 123Map 1、获取键集合，根据键找值 2、获取键值对集合，根据键值对对象获取键和值 4、怎么选择先看有没有对应关系(是否需要键值对)123456789101112有 Map 是否需要对键排序 需要 TreeMap 不需要 HashMap 没有 Collection 是否要求元素唯一 是 Set 不是 List 是否对元素进行排序 增删多，查找少 LinkedList 是 TreeSet 增删少，查找多 ArrayList或者Vector 不是 HashSet 如果线程安全 Vector 不需要保证线程安全 ArrayList]]></content>
       <categories>
-        <category>Java基础</category>
+        <category>Java 基础</category>
       </categories>
       <tags>
         <tag>Java基础知识</tag>
@@ -16,7 +16,7 @@
     <url>%2F2017%2F05%2F04%2FJava%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91%2FMaven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20(UTF-8%20actually)%2F</url>
     <content type="text"><![CDATA[执行Maven Install打包的时候，提示以下警告信息：1[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent! 解决方法：打开项目属性》Resources，按下图修改。 保存后重新执行Maven Install 发现警告依然存在，原来是理解错误错误了，应该修改Maven的配置文件中关于编码的配置 1&lt;encoding&gt;utf-8&lt;/encoding&gt;： 完整示例：pom.xml 12345678910&lt;plugin&gt; &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt; &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt; &lt;version&gt;3.0&lt;/version&gt; &lt;configuration&gt; &lt;encoding&gt;utf-8&lt;/encoding&gt; &lt;source&gt;1.8&lt;/source&gt; &lt;target&gt;1.8&lt;/target&gt; &lt;/configuration&gt;&lt;/plugin&gt; 如果还是存在警告，则需要在中添加标签：12345&lt;properties&gt; &lt;project.build.sourceEncoding&gt; UTF-8 &lt;/project.build.sourceEncoding&gt;&lt;/properties&gt; 最终 Maven Install 警告就消失了。 本文作者： Scorpip_cc 本文链接： 原文博客地址 版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 3.0 CN 许可协议。转载请注明出处！]]></content>
       <categories>
-        <category>Java报错解决</category>
+        <category>Java 报错解决</category>
       </categories>
       <tags>
         <tag>Java后台开发</tag>
