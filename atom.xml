@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>做自己的太阳</title>
+  <subtitle>Scorpio_cc</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-05-09T02:40:58.698Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Scorpio_cc</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java集合体系总结</title>
+    <link href="http://yoursite.com/2017/05/05/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E3%80%90Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E3%80%91Java%E9%9B%86%E5%90%88%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2017/05/05/Java基础知识/【Java基础知识】Java集合体系总结/</id>
+    <published>2017-05-04T16:00:00.000Z</published>
+    <updated>2017-05-09T02:40:58.698Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、Collection-单列集合"><a href="#一、Collection-单列集合" class="headerlink" title="一、Collection(单列集合)"></a>一、Collection(单列集合)</h3><h5 id="List-有序-可重复"><a href="#List-有序-可重复" class="headerlink" title="List 有序 可重复"></a>List 有序 可重复</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ArrayList    底层是数组      查找快，增删慢     线程不安全，效率高</div><div class="line">LinkedList   底层是链表      查找慢，增删快</div><div class="line">Vector       底层是数组      查找快，增删慢     线程安全，效率低</div></pre></td></tr></table></figure>
+<h5 id="Set-无序-不可重复"><a href="#Set-无序-不可重复" class="headerlink" title="Set  无序  不可重复"></a>Set  无序  不可重复</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">HashSet    底层是哈希表</div><div class="line">                如何保证元素的唯一性</div><div class="line">                重写元素的hashcode和equals方法</div><div class="line">                    hashcode相同    判断equals方法  返回true 不填加</div><div class="line">                                                   返回false 添加</div><div class="line">                    hashcode不相同  直接添加</div><div class="line">                                                </div><div class="line">TreeSet    底层是二叉树</div><div class="line">                    如何保证元素的唯一性和排序</div><div class="line">                    1、自然排序(元素具备比较特性)   ----实现Comparable接口</div><div class="line">                    2、使用排序器(集合具备比较特性) ---- 实现Comparator接口</div></pre></td></tr></table></figure>
+<h3 id="二、Map-双列集合-数据结构只针对键有效"><a href="#二、Map-双列集合-数据结构只针对键有效" class="headerlink" title="二、Map(双列集合)     数据结构只针对键有效"></a>二、Map(双列集合)     数据结构只针对键有效</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">HashMap    底层是哈希表</div><div class="line">                     如何保证键的唯一性</div><div class="line">                     重写元素的hashcode和equals方法</div><div class="line">                    hashcode相同    判断equals方法  返回true 不填加</div><div class="line">                                                   返回false 添加</div><div class="line">                    hashcode不相同  直接添加</div><div class="line">                    </div><div class="line">TreeMap     底层是二叉树</div><div class="line">                如何保证键的唯一性和排序</div><div class="line">                1、自然排序(元素具备比较特性)   ----实现Comparable接口</div><div class="line">                2、使用排序器(集合具备比较特性)  ---- 实现Comparator接口</div></pre></td></tr></table></figure>
+<h4 id="2、功能"><a href="#2、功能" class="headerlink" title="2、功能"></a>2、功能</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Collection</div><div class="line">        add(Object obj) remove(Object obj) contains(obj)  size() iterator()</div><div class="line">        List   add(int index,Object obj)  remove(int index)  get(index)  set</div><div class="line"></div><div class="line">Set  </div><div class="line">Map </div><div class="line">        put(key,value)  remove(key) get(key) containsValue(value)  containsKey(key)</div><div class="line">        get(key) keySet() values() entrySet()</div></pre></td></tr></table></figure>
+<h4 id="3、遍历"><a href="#3、遍历" class="headerlink" title="3、遍历"></a>3、遍历</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">List </div><div class="line"></div><div class="line">    1、迭代器      使用迭代器遍历集合时，不能通过集合对象去修改集合元素</div><div class="line">    2、for循环</div><div class="line">    3、增强for循环</div><div class="line">    仅仅是遍历集合，任选一种，</div><div class="line">    如果要对集合元素进行操作，使用后面两种</div><div class="line">    跟集合索引相关的操作，使用for循环</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Set</div><div class="line">    1、迭代器</div><div class="line">    2、增强for循环</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Map</div><div class="line">    1、获取键集合，根据键找值</div><div class="line">    2、获取键值对集合，根据键值对对象获取键和值</div></pre></td></tr></table></figure>
+<h4 id="4、怎么选择"><a href="#4、怎么选择" class="headerlink" title="4、怎么选择"></a>4、怎么选择</h4><h5 id="先看有没有对应关系-是否需要键值对"><a href="#先看有没有对应关系-是否需要键值对" class="headerlink" title="先看有没有对应关系(是否需要键值对)"></a>先看有没有对应关系(是否需要键值对)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">有    Map</div><div class="line">    是否需要对键排序                  需要  TreeMap</div><div class="line">                                    不需要 HashMap</div><div class="line">      </div><div class="line">    </div><div class="line">没有  Collection</div><div class="line">    是否要求元素唯一</div><div class="line">      是   Set                    不是 List</div><div class="line">        是否对元素进行排序           增删多，查找少  LinkedList</div><div class="line">        是  TreeSet                 增删少，查找多  ArrayList或者Vector</div><div class="line">        不是 HashSet                如果线程安全  Vector</div><div class="line">                                    不需要保证线程安全 ArrayList</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、Collection-单列集合&quot;&gt;&lt;a href=&quot;#一、Collection-单列集合&quot; class=&quot;headerlink&quot; title=&quot;一、Collection(单列集合)&quot;&gt;&lt;/a&gt;一、Collection(单列集合)&lt;/h3&gt;&lt;h5 id=&quot;Lis
+    
+    </summary>
+    
+      <category term="Java基础" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Java基础知识" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maven警告解决:Using platform encoding (UTF-8 actually)</title>
+    <link href="http://yoursite.com/2017/05/04/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Maven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20(UTF-8%20actually)/"/>
+    <id>http://yoursite.com/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/</id>
+    <published>2017-05-03T16:00:00.000Z</published>
+    <updated>2017-05-09T02:45:04.559Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="执行Maven-Install打包的时候，提示以下警告信息："><a href="#执行Maven-Install打包的时候，提示以下警告信息：" class="headerlink" title="执行Maven Install打包的时候，提示以下警告信息："></a>执行Maven Install打包的时候，提示以下警告信息：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!</div></pre></td></tr></table></figure>
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>打开项目属性》Resources，按下图修改。 </p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2759587-c95128cccfb33d6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改默认编码"></p>
+<p><strong>保存后重新执行Maven Install</strong></p>
+<p>发现警告依然存在，原来是理解错误错误了，应该修改Maven的配置文件中关于编码的配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;encoding&gt;utf-8&lt;/encoding&gt;：</div></pre></td></tr></table></figure>
+<p><strong>完整示例：pom.xml</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;plugin&gt;</div><div class="line">        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</div><div class="line">        &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;</div><div class="line">        &lt;version&gt;3.0&lt;/version&gt;</div><div class="line">            &lt;configuration&gt;</div><div class="line">            &lt;encoding&gt;utf-8&lt;/encoding&gt;</div><div class="line">            &lt;source&gt;1.8&lt;/source&gt;</div><div class="line">            &lt;target&gt;1.8&lt;/target&gt;</div><div class="line">        &lt;/configuration&gt;</div><div class="line">&lt;/plugin&gt;</div></pre></td></tr></table></figure>
+<h2 id="如果还是存在警告，则需要在中添加标签："><a href="#如果还是存在警告，则需要在中添加标签：" class="headerlink" title="如果还是存在警告，则需要在中添加标签："></a>如果还是存在警告，则需要在<project>中添加<properties>标签：</properties></project></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;properties&gt;</div><div class="line">         &lt;project.build.sourceEncoding&gt;</div><div class="line">             UTF-8</div><div class="line">         &lt;/project.build.sourceEncoding&gt;</div><div class="line">&lt;/properties&gt;</div></pre></td></tr></table></figure>
+<p><strong>最终 Maven Install 警告就消失了。</strong></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2759587-8c313c76948784b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编码警告消失"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;执行Maven-Install打包的时候，提示以下警告信息：&quot;&gt;&lt;a href=&quot;#执行Maven-Install打包的时候，提示以下警告信息：&quot; class=&quot;headerlink&quot; title=&quot;执行Maven Install打包的时候，提示以下警告信息：&quot;&gt;
+    
+    </summary>
+    
+      <category term="Java报错解决" scheme="http://yoursite.com/categories/Java%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/"/>
+    
+    
+      <category term="Java后台开发" scheme="http://yoursite.com/tags/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
+    
+  </entry>
+  
+</feed>
