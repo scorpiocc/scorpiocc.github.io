@@ -4,9 +4,9 @@
   <subtitle>Scorpio_cc</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://scorpiocc.cn/"/>
   <updated>2017-05-09T02:40:58.698Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://scorpiocc.cn/</id>
   
   <author>
     <name>Scorpio_cc</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Java集合体系总结</title>
-    <link href="http://yoursite.com/2017/05/05/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E3%80%90Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E3%80%91Java%E9%9B%86%E5%90%88%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2017/05/05/Java基础知识/【Java基础知识】Java集合体系总结/</id>
+    <link href="http://scorpiocc.cn/2017/05/05/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E3%80%90Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E3%80%91Java%E9%9B%86%E5%90%88%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93/"/>
+    <id>http://scorpiocc.cn/2017/05/05/Java基础知识/【Java基础知识】Java集合体系总结/</id>
     <published>2017-05-04T16:00:00.000Z</published>
     <updated>2017-05-09T02:40:58.698Z</updated>
     
@@ -38,17 +38,17 @@
     
     </summary>
     
-      <category term="Java基础" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80/"/>
+      <category term="Java基础" scheme="http://scorpiocc.cn/categories/Java%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="Java基础知识" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+      <category term="Java基础知识" scheme="http://scorpiocc.cn/tags/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
   <entry>
     <title>Maven警告解决:Using platform encoding （UTF-8 actually）</title>
-    <link href="http://yoursite.com/2017/05/04/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Maven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20(UTF-8%20actually)/"/>
-    <id>http://yoursite.com/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/</id>
+    <link href="http://scorpiocc.cn/2017/05/04/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Maven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20(UTF-8%20actually)/"/>
+    <id>http://scorpiocc.cn/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/</id>
     <published>2017-05-03T16:00:00.000Z</published>
     <updated>2017-05-15T07:08:07.426Z</updated>
     
@@ -65,7 +65,7 @@
 <p><img src="http://upload-images.jianshu.io/upload_images/2759587-8c313c76948784b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编码警告消失"></p>
 <blockquote>
 <p>本文作者： Scorpip_cc</p>
-<p>本文链接： <a href="http://scorpiocc.cn/2017/05/04/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Maven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20（UTF-8 actually）" target="_blank" rel="external">原文博客地址</a></p>
+<p>本文链接： <a href="http://scorpiocc.cn/2017/05/04/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Maven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20（UTF-8 actually）">原文博客地址</a></p>
 <p>版权声明： 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" rel="external">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！</p>
 </blockquote>
 ]]></content>
@@ -76,12 +76,12 @@
     
     </summary>
     
-      <category term="Java报错解决" scheme="http://yoursite.com/categories/Java%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/"/>
+      <category term="Java报错解决" scheme="http://scorpiocc.cn/categories/Java%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/"/>
     
     
-      <category term="Java后台开发" scheme="http://yoursite.com/tags/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/"/>
+      <category term="Java后台开发" scheme="http://scorpiocc.cn/tags/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
+      <category term="Maven" scheme="http://scorpiocc.cn/tags/Maven/"/>
     
   </entry>
   
