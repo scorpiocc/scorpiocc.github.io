@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -71,18 +71,18 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Scorpio" />
 
 
 
 
 
-  <link rel="alternate" href="/atom.xml" title="做自己的太阳" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Scorpio_cc -个人博客" type="application/atom+xml" />
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.jpg?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.jpg?v=5.1.0" />
 
 
 
@@ -91,12 +91,12 @@
 
 <meta name="description" content="就怕你碌碌无为，却还在安慰自己的平凡可贵">
 <meta property="og:type" content="website">
-<meta property="og:title" content="做自己的太阳">
+<meta property="og:title" content="Scorpio_cc -个人博客">
 <meta property="og:url" content="http://scorpiocc.cn/tags/Java后台开发/index.html">
-<meta property="og:site_name" content="做自己的太阳">
+<meta property="og:site_name" content="Scorpio_cc -个人博客">
 <meta property="og:description" content="就怕你碌碌无为，却还在安慰自己的平凡可贵">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="做自己的太阳">
+<meta name="twitter:title" content="Scorpio_cc -个人博客">
 <meta name="twitter:description" content="就怕你碌碌无为，却还在安慰自己的平凡可贵">
 
 
@@ -105,20 +105,20 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
-    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":15,"offset_float":0,"b2t":false,"scrollpercent":true},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
+      userId: 'undefined',
       author: '博主'
     },
     algolia: {
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      hits: "",
+      labels: ""
     }
   };
 </script>
@@ -131,7 +131,7 @@
 
 
 
-  <title> 标签: Java后台开发 | 做自己的太阳 </title>
+  <title> 标签: Java后台开发 | Scorpio_cc -个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -171,7 +171,7 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta custom-logo">
     
 
     <div class="custom-logo-site-title">
@@ -182,7 +182,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">Scorpio_cc</p>
+        <h1 class="site-subtitle" itemprop="description">做自己的太阳</h1>
       
   </div>
 
@@ -318,7 +318,7 @@
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h2 class="post-title">
         
             <a class="post-title-link" href="/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/" itemprop="url">
               
@@ -326,7 +326,7 @@
               
             </a>
         
-      </h1>
+      </h2>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -374,12 +374,12 @@
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="/images/scorpiocc.JPG"
                alt="Scorpio_cc" />
           <p class="site-author-name" itemprop="name">Scorpio_cc</p>
            
-              <p class="site-description motion-element" itemprop="description">就怕你碌碌无为，却还在安慰自己的平凡可贵</p>
-          
+              <p class="site-description motion-element" itemprop="description"></p>
+           
         </div>
         <nav class="site-state motion-element">
 
@@ -429,14 +429,18 @@
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/scorpiocc" target="_blank" title="github">
+                <a href="https://github.com/scorpiocc" target="_blank" title="GitHub">
                   
-                  github
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
                 <a href="http://www.jianshu.com/u/950b903e3aa4" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-book"></i>
                   
                   简书
                 </a>
@@ -446,6 +450,12 @@
         </div>
 
         
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
         
 
         
@@ -458,7 +468,7 @@
             <ul class="links-of-blogroll-list">
               
                 <li class="links-of-blogroll-item">
-                  <a href="www.jonzzs.cn" title="Jonzzs的微博" target="_blank">Jonzzs的微博</a>
+                  <a href="http://jonzzs.cn/" title="Jonzzs的微博" target="_blank">Jonzzs的微博</a>
                 </li>
               
                 <li class="links-of-blogroll-item">
@@ -506,7 +516,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+    NexT.Mist
   </a>
 </div>
 
@@ -601,13 +611,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
-
-
 
   
 
