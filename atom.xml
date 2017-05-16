@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://scorpiocc.cn/"/>
-  <updated>2017-05-15T07:46:42.408Z</updated>
+  <updated>2017-05-16T07:41:11.932Z</updated>
   <id>http://scorpiocc.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://scorpiocc.cn/2017/05/05/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E3%80%90Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E3%80%91Java%E9%9B%86%E5%90%88%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93/"/>
     <id>http://scorpiocc.cn/2017/05/05/Java基础知识/【Java基础知识】Java集合体系总结/</id>
     <published>2017-05-04T16:00:00.000Z</published>
-    <updated>2017-05-15T07:46:42.408Z</updated>
+    <updated>2017-05-16T07:41:11.932Z</updated>
     
     <content type="html"><![CDATA[<h3 id="一、Collection-单列集合"><a href="#一、Collection-单列集合" class="headerlink" title="一、Collection(单列集合)"></a>一、Collection(单列集合)</h3><h5 id="List-有序-可重复"><a href="#List-有序-可重复" class="headerlink" title="List 有序 可重复"></a>List 有序 可重复</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ArrayList    底层是数组      查找快，增删慢     线程不安全，效率高</div><div class="line">LinkedList   底层是链表      查找慢，增删快</div><div class="line">Vector       底层是数组      查找快，增删慢     线程安全，效率低</div></pre></td></tr></table></figure>
 <h5 id="Set-无序-不可重复"><a href="#Set-无序-不可重复" class="headerlink" title="Set  无序  不可重复"></a>Set  无序  不可重复</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">HashSet    底层是哈希表</div><div class="line">                如何保证元素的唯一性</div><div class="line">                重写元素的hashcode和equals方法</div><div class="line">                    hashcode相同    判断equals方法  返回true 不填加</div><div class="line">                                                   返回false 添加</div><div class="line">                    hashcode不相同  直接添加</div><div class="line">                                                </div><div class="line">TreeSet    底层是二叉树</div><div class="line">                    如何保证元素的唯一性和排序</div><div class="line">                    1、自然排序(元素具备比较特性)   ----实现Comparable接口</div><div class="line">                    2、使用排序器(集合具备比较特性) ---- 实现Comparator接口</div></pre></td></tr></table></figure>
@@ -38,7 +38,7 @@
     
     </summary>
     
-      <category term="Java 基础" scheme="http://scorpiocc.cn/categories/Java-%E5%9F%BA%E7%A1%80/"/>
+      <category term="Java 基础知识" scheme="http://scorpiocc.cn/categories/Java-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
     
       <category term="Java基础知识" scheme="http://scorpiocc.cn/tags/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
