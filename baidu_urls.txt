@@ -1,1 +1,1 @@
-http://scorpiocc.cn/2017/05/05/Java基础知识/【Java基础知识】Java集合体系总结/
+http://scorpiocc.cn/2017/05/17/Hexo博客教程/Hexo的Next主题侧边栏自定义修改/

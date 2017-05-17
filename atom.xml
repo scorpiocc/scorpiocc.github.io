@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://scorpiocc.cn/"/>
-  <updated>2017-05-16T07:41:11.932Z</updated>
+  <updated>2017-05-17T04:35:10.035Z</updated>
   <id>http://scorpiocc.cn/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo的Next主题侧边栏自定义修改</title>
+    <link href="http://scorpiocc.cn/2017/05/17/Hexo%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/Hexo%E7%9A%84Next%E4%B8%BB%E9%A2%98%E4%BE%A7%E8%BE%B9%E6%A0%8F%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/"/>
+    <id>http://scorpiocc.cn/2017/05/17/Hexo博客教程/Hexo的Next主题侧边栏自定义修改/</id>
+    <published>2017-05-16T16:00:00.000Z</published>
+    <updated>2017-05-17T04:35:10.035Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next主题</a>的强大我就不多说了。侧边栏的标题和网站title标题相同，导致不能<code>自定义</code>。然后我就想着两者能不能分开，本文仅仅探讨<code>个人想法</code>。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2759587-4fd85f3b8b2480e1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="标题自定义"></p>
+<blockquote>
+<p>如图所示。原版左边2个框是全部获取的title值。但是如何自定义获取呢。就要改源码。</p>
+<p>首先右击<a href="http://scorpiocc.cn">做自己的太阳</a><code>举例</code>点击检查，查看源码发现div标签和class命名</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2759587-31d15896bdc0c955.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查看源码"></p>
+<blockquote>
+<p>然后我们就是根据这个字符去主题下搜索。windows是<code>默认只搜索文件名</code>，所以要设置一下，打开计算机，选择工具，文件夹选项。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2759587-5b431b7a4b6573a3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文件夹选项"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2759587-232e679bf52acab2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改搜索设置"></p>
+<blockquote>
+<p>搜索完然后我们查找到在<code>themes\next\layout\_partials\header.swig</code>文件。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2759587-8edaad280f222ed8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改源码"></p>
+<blockquote>
+<p>修改成我们想要的字段，当然我们也可以新建字段，<code>自定义内容</code>。目前<a href="http://scorpiocc.cn">本人博客</a>主题是<code>Pisces主题</code>。如图是我修改后的样子。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2759587-6b4c0224f763505b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Scorpio_cc的博客"></p>
+<blockquote>
+<p>修改原理都一样，剩下来的都请大家自己探寻把。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Next主题&lt;/a&gt;的强大我就不多说了。侧边栏的标题和网站title标题相同，导
+    
+    </summary>
+    
+      <category term="Hexo 博客教程" scheme="http://scorpiocc.cn/categories/Hexo-%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Hexo" scheme="http://scorpiocc.cn/tags/Hexo/"/>
+    
+      <category term="Next主题" scheme="http://scorpiocc.cn/tags/Next%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Java集合体系总结</title>
