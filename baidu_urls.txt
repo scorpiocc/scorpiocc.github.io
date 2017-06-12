@@ -1,1 +1,1 @@
-http://scorpiocc.cn/2017/05/19/Java后台开发/Spring AOP 面向切面编程详解/
+http://scorpiocc.cn/2017/06/12/Java基础知识/【Java基础知识】JAVA 对象序列化——Serializable/
