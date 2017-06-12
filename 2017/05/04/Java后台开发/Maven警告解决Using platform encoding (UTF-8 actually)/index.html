@@ -102,7 +102,7 @@
 <meta property="og:description" content="执行Maven Install打包的时候，提示以下警告信息：1[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent! 解决方法：打开项目属性》Resources，按下图修改。   保存后重新执行Maven Install 发现警告依然">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2759587-c95128cccfb33d6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2759587-8c313c76948784b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-05-15T07:46:32.101Z">
+<meta property="og:updated_time" content="2017-06-12T08:12:36.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Maven警告解决:Using platform encoding （UTF-8 actually）">
 <meta name="twitter:description" content="执行Maven Install打包的时候，提示以下警告信息：1[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent! 解决方法：打开项目属性》Resources，按下图修改。   保存后重新执行Maven Install 发现警告依然">
@@ -461,9 +461,9 @@
 <p><img src="http://upload-images.jianshu.io/upload_images/2759587-c95128cccfb33d6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改默认编码"></p>
 <p><strong>保存后重新执行Maven Install</strong></p>
 <p>发现警告依然存在，原来是理解错误错误了，应该修改Maven的配置文件中关于编码的配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;encoding&gt;utf-8&lt;/encoding&gt;：</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;encoding&gt;utf-8&lt;/encoding&gt;：</div></pre></td></tr></table></figure>
 <p><strong>完整示例：pom.xml</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;plugin&gt;</div><div class="line">        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</div><div class="line">        &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;</div><div class="line">        &lt;version&gt;3.0&lt;/version&gt;</div><div class="line">            &lt;configuration&gt;</div><div class="line">            &lt;encoding&gt;utf-8&lt;/encoding&gt;</div><div class="line">            &lt;source&gt;1.8&lt;/source&gt;</div><div class="line">            &lt;target&gt;1.8&lt;/target&gt;</div><div class="line">        &lt;/configuration&gt;</div><div class="line">&lt;/plugin&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;plugin&gt;</div><div class="line">        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</div><div class="line">        &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;</div><div class="line">        &lt;version&gt;3.0&lt;/version&gt;</div><div class="line">            &lt;configuration&gt;</div><div class="line">            &lt;encoding&gt;utf-8&lt;/encoding&gt;</div><div class="line">            &lt;source&gt;1.8&lt;/source&gt;</div><div class="line">            &lt;target&gt;1.8&lt;/target&gt;</div><div class="line">        &lt;/configuration&gt;</div><div class="line">&lt;/plugin&gt;</div></pre></td></tr></table></figure>
 <h2 id="如果还是存在警告，则需要在中添加标签："><a href="#如果还是存在警告，则需要在中添加标签：" class="headerlink" title="如果还是存在警告，则需要在中添加标签："></a>如果还是存在警告，则需要在<project>中添加<properties>标签：</properties></project></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;properties&gt;</div><div class="line">         &lt;project.build.sourceEncoding&gt;</div><div class="line">             UTF-8</div><div class="line">         &lt;/project.build.sourceEncoding&gt;</div><div class="line">&lt;/properties&gt;</div></pre></td></tr></table></figure>
 <p><strong>最终 Maven Install 警告就消失了。</strong></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2759587-8c313c76948784b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编码警告消失"></p>
@@ -669,7 +669,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

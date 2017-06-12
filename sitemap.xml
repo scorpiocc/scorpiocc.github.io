@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://scorpiocc.cn/2017/06/12/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E3%80%90Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E3%80%91JAVA%20%E5%AF%B9%E8%B1%A1%E5%BA%8F%E5%88%97%E5%8C%96%E2%80%94%E2%80%94Serializable/</loc>
+    <loc>http://scorpiocc.cn/2017/05/04/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Maven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20(UTF-8%20actually)/</loc>
     
-    <lastmod>2017-06-12T07:31:20.442Z</lastmod>
+    <lastmod>2017-06-12T08:12:36.724Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://scorpiocc.cn/2017/05/19/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Spring%20AOP%20%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B%E8%AF%A6%E8%A7%A3/</loc>
     
-    <lastmod>2017-05-22T03:21:56.460Z</lastmod>
+    <lastmod>2017-06-12T08:12:01.944Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://scorpiocc.cn/2017/06/12/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E3%80%90Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E3%80%91JAVA%20%E5%AF%B9%E8%B1%A1%E5%BA%8F%E5%88%97%E5%8C%96%E2%80%94%E2%80%94Serializable/</loc>
+    
+    <lastmod>2017-06-12T08:10:42.315Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>http://scorpiocc.cn/categories/index.html</loc>
     
     <lastmod>2017-05-15T07:51:54.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://scorpiocc.cn/2017/05/04/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Maven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20(UTF-8%20actually)/</loc>
-    
-    <lastmod>2017-05-15T07:46:32.101Z</lastmod>
     
   </url>
   
