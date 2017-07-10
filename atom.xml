@@ -185,7 +185,7 @@ local class serialVersionUID = 3419534311899376629
     <link href="http://scorpiocc.cn/2017/05/17/Hexo%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/Hexo%E7%9A%84Next%E4%B8%BB%E9%A2%98%E4%BE%A7%E8%BE%B9%E6%A0%8F%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/"/>
     <id>http://scorpiocc.cn/2017/05/17/Hexo博客教程/Hexo的Next主题侧边栏自定义修改/</id>
     <published>2017-05-16T16:00:00.000Z</published>
-    <updated>2017-05-17T04:35:10.035Z</updated>
+    <updated>2017-06-30T03:22:02.915Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next主题</a>的强大我就不多说了。侧边栏的标题和网站title标题相同，导致不能<code>自定义</code>。然后我就想着两者能不能分开，本文仅仅探讨<code>个人想法</code>。</p>
@@ -266,7 +266,7 @@ local class serialVersionUID = 3419534311899376629
     <link href="http://scorpiocc.cn/2017/05/04/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Maven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20(UTF-8%20actually)/"/>
     <id>http://scorpiocc.cn/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/</id>
     <published>2017-05-03T16:00:00.000Z</published>
-    <updated>2017-06-12T08:12:36.724Z</updated>
+    <updated>2017-06-30T02:26:33.659Z</updated>
     
     <content type="html"><![CDATA[<h3 id="执行Maven-Install打包的时候，提示以下警告信息："><a href="#执行Maven-Install打包的时候，提示以下警告信息：" class="headerlink" title="执行Maven Install打包的时候，提示以下警告信息："></a>执行Maven Install打包的时候，提示以下警告信息：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!</div></pre></td></tr></table></figure>
 <h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>打开项目属性》Resources，按下图修改。 </p>
