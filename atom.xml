@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://scorpiocc.cn/"/>
-  <updated>2017-08-08T07:46:03.685Z</updated>
+  <updated>2017-08-08T07:50:49.954Z</updated>
   <id>http://scorpiocc.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://scorpiocc.cn/2017/08/08/%E5%85%B6%E4%BB%96/%E4%BA%9A%E9%A9%AC%E9%80%8AVPS%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/"/>
     <id>http://scorpiocc.cn/2017/08/08/其他/亚马逊VPS服务器搭建/</id>
     <published>2017-08-07T16:00:00.000Z</published>
-    <updated>2017-08-08T07:46:03.685Z</updated>
+    <updated>2017-08-08T07:50:49.954Z</updated>
     
     <content type="html"><![CDATA[<p>作为一个程序员，肯定要经常使用谷歌查询资料，但是网络上大部分的免费帐号又是延迟很严重，买独享帐号又要花费很多。正好亚马逊有免费1年的服务器使用(<strong>每月15G流量,超出会扣费</strong>)，此教程仅为个人理解，欢迎提出意见。</p>
 <h3 id="第一步：注册"><a href="#第一步：注册" class="headerlink" title="第一步：注册"></a>第一步：注册</h3><p>传送门：<a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html" target="_blank" rel="external">注册</a><br>别选错了，<strong>选我是新用户</strong>，输入邮箱按登陆，会进入下一个页面进行注册。<br> ——-注册过程很简单，自己填写，输入用户名，密码——-<br>进入下一步后选择个人，别选择公司，再下一步需要绑定储蓄卡或信用卡，不是所有的储蓄卡都支持，本人绑定的浦发信用卡，<strong>手续费要扣除2美金</strong>（可用RMB还款，不过14块用1年独享帐号很舒服了是吧=。=）<br><img src="http://upload-images.jianshu.io/upload_images/2759587-55d231bbb84183a6.jpg" alt="注册界面"></p>
@@ -42,8 +42,8 @@
 <p>点击连接，如果出现如图所示，则登陆成功，不然可能是之前编辑模式没有修改好，或者其他操作失误。<br><img src="http://upload-images.jianshu.io/upload_images/2759587-b7478f023c1f3284.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="成功登陆"></p>
 <h3 id="第四步，安装ss服务（重点！）"><a href="#第四步，安装ss服务（重点！）" class="headerlink" title="第四步，安装ss服务（重点！）"></a>第四步，安装ss服务（重点！）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">第一条：  wget --no-check-certificate</div><div class="line">         https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-go.sh</div><div class="line">第二条：  chmod +x shadowsocks-go.sh</div><div class="line">第三条：  ./shadowsocks-go.sh 2&gt;&amp;1 | tee shadowsocks-go.log</div></pre></td></tr></table></figure>
 <p>最后一条密令执行完事，会提示输入密码（之后ss帐号密码） 然后提示输入端口 可默认，最后任意键继续。<code>如果碰到以下情况删除不了的，按如下操作,有基础的请无视</code><br><strong>然后一直回车就可以了，接着代码滚屏。</strong><br><img src="http://upload-images.jianshu.io/upload_images/2759587-1a47fc6e633261bf.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="删除多余字符"></p>
-<p><strong>最终修成正果  Enjoy it !</strong><br><img src="http://upload-images.jianshu.io/upload_images/2759587-9213b5f87869b91b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Enjoy it !"><br><code>PS：此服务器一个月只免费750小时，1个实例一个月(720小时足够)，2个就只能用半个月了，请注意</code></p>
-<p>打开Shadowsocks输入帐号密码端口，确定，即可。</p>
+<p><strong>最终修成正果  Enjoy it !</strong><br><img src="http://upload-images.jianshu.io/upload_images/2759587-9213b5f87869b91b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Enjoy it !"><br><code>PS：此服务器一个月只免费750小时，1个实例（一个帐号可多人使用）一个月(720小时足够)，2个就只能用半个月了（没必要），请注意</code></p>
+<p>打开<a href="http://ss.ishadowx.com/" target="_blank" rel="external">Shadowsocks</a>输入帐号密码端口，确定，即可。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2759587-1bfffe091e5a22ea.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="登陆"></p>
 <p><strong>查看当前流量使用情况和超流量预警点此前往</strong>:<a href="http://www.jianshu.com/p/b2d2f9de722a" target="_blank" rel="external">地址</a></p>
 <p><strong>至此 教程结束 觉得教程有用的可以打赏下噢=。=</strong></p>
