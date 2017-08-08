@@ -1,1 +1,1 @@
-http://scorpiocc.cn/2017/06/12/Java基础知识/【Java基础知识】JAVA 对象序列化——Serializable/
+http://scorpiocc.cn/2017/08/08/其他/亚马逊VPS服务器搭建/
