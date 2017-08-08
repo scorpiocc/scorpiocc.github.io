@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="Scorpio_cc -个人博客">
 <meta property="og:description" content="作为一个程序员，肯定要经常使用谷歌查询资料，但是网络上大部分的免费帐号又是延迟很严重，买独享帐号又要花费很多。正好亚马逊有免费1年的服务器使用(每月15G流量,超出会扣费)，此教程仅为个人理解，欢迎提出意见。 第一步：注册传送门：注册别选错了，选我是新用户，输入邮箱按登陆，会进入下一个页面进行注册。 ——-注册过程很简单，自己填写，输入用户名，密码——-进入下一步后选择个人，别选择公司，再下一步需">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2759587-600208c26a3f54d7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-08-08T07:50:49.954Z">
+<meta property="og:updated_time" content="2017-08-08T08:13:22.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="亚马逊VPS服务器搭建">
 <meta name="twitter:description" content="作为一个程序员，肯定要经常使用谷歌查询资料，但是网络上大部分的免费帐号又是延迟很严重，买独享帐号又要花费很多。正好亚马逊有免费1年的服务器使用(每月15G流量,超出会扣费)，此教程仅为个人理解，欢迎提出意见。 第一步：注册传送门：注册别选错了，选我是新用户，输入邮箱按登陆，会进入下一个页面进行注册。 ——-注册过程很简单，自己填写，输入用户名，密码——-进入下一步后选择个人，别选择公司，再下一步需">
@@ -459,7 +459,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://upload-images.jianshu.io/upload_images/2759587-600208c26a3f54d7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" rel="gallery_cj63aefnn000cdsuniwukd6ep"
+                 href="http://upload-images.jianshu.io/upload_images/2759587-600208c26a3f54d7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" rel="gallery_cj63b9rdc000c04un1fluyxr3"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://upload-images.jianshu.io/upload_images/2759587-600208c26a3f54d7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" itemprop="contentUrl"/>
               </a>
@@ -486,7 +486,7 @@
 <p>如果跳出如下界面，则连接成功。（可能会等待一会儿，请自行调试）<br><img src="http://upload-images.jianshu.io/upload_images/2759587-af2ff12f9d584399.jpg" alt="Xshell5操作"></p>
 <p><strong>登陆以后执行以下命令 </strong><br><code>sudo passwd root</code>  此命令输入完之后会提示让你输入 root的密码，设置一个记住就好，会让你输入两遍（<code>如果忘记密码，可重复执行</code>）<br><img src="http://upload-images.jianshu.io/upload_images/2759587-787b1c4577fd2448.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="输入密码不会显示星号，输入直接回车输入第二次！！"><br><code>sudo chmod 777 /etc/ssh/sshd_config</code> 更改文件权限为777<br><code>vi /etc/ssh/sshd_config</code>        执行完此命令后 <strong>在英文状态下按  字母i  进入编辑模式</strong>(进入编辑模式后键盘↓箭头按住可向下查看代码。)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">PermitRootLogin 后 修改成 yes</div><div class="line">PasswordAuthentication 后修改成 yes</div><div class="line">UsePAM  后修改为 no</div></pre></td></tr></table></figure></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2759587-5f21cd170439652f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改配置"></p>
-<p>改完之后，按ESC 输入:wq  保存并退出    <code>:wq</code>是完整的命令 前面有冒号<br>输入 su root  输入刚才设置的密码  进入root用户，输入命令 reboot 重启vps</p>
+<p>改完之后，按ESC 输入:wq  保存并退出    <code>:wq</code>是完整的命令 前面有冒号<br>输入 <code>su root</code>  输入刚才设置的密码  进入root用户，输入命令 <code>reboot</code> 重启vps</p>
 <p>重启需要1-2分钟。 之后重新打开软件，修改用户配置，点击属性<br><img src="http://upload-images.jianshu.io/upload_images/2759587-a5f21c5583089f52.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改用户配置"></p>
 <p><strong>帐号修改为之前设置的root帐号</strong><br><img src="http://upload-images.jianshu.io/upload_images/2759587-d4f96e8b63811d17.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改登陆用户"></p>
 <p>点击连接，如果出现如图所示，则登陆成功，不然可能是之前编辑模式没有修改好，或者其他操作失误。<br><img src="http://upload-images.jianshu.io/upload_images/2759587-b7478f023c1f3284.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="成功登陆"></p>
