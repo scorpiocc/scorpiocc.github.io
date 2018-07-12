@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://scorpiocc.cn/"/>
-  <updated>2017-08-10T07:35:17.573Z</updated>
+  <updated>2018-07-12T02:58:06.267Z</updated>
   <id>http://scorpiocc.cn/</id>
   
   <author>
@@ -14,6 +14,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WebStorm配置nodejs+cnpm</title>
+    <link href="http://scorpiocc.cn/2018/07/12/Vue%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/WebStorm%E9%85%8D%E7%BD%AEnodejs+cnpm/"/>
+    <id>http://scorpiocc.cn/2018/07/12/Vue前端开发/WebStorm配置nodejs+cnpm/</id>
+    <published>2018-07-11T16:00:00.000Z</published>
+    <updated>2018-07-12T02:58:06.267Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="windows配置一路流程："><a href="#windows配置一路流程：" class="headerlink" title="windows配置一路流程："></a>windows配置一路流程：</h2><h3 id="Nodejs"><a href="#Nodejs" class="headerlink" title="Nodejs"></a>Nodejs</h3><p>官网下载<a href="https://nodejs.org/en/" target="_blank" rel="external">Nodejs</a>后一直下一步安装结束。<br>为防止c盘不够用，将npm目录迁移至其他盘。<br>安装完成之后打开cmd,输入node -v检查是否安装成功。</p>
+<h4 id="1-修改路径"><a href="#1-修改路径" class="headerlink" title="1.修改路径"></a>1.修改路径</h4><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">打开<span class="built_in">cmd</span>，输入 npm  config ls</div></pre></td></tr></table></figure>
+<p>查看当前配置。<br>留意看 cache=” “ 和 prefix=” “<br>然后选择需要迁移到的开发目录，我这里选择的E盘：<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">在<span class="built_in">cmd</span>中输入</div><div class="line">npm config <span class="built_in">set</span> cache "E:\nodejs\node_cache"</div><div class="line">npm config <span class="built_in">set</span> prefix "E:\nodejs\node_global"</div></pre></td></tr></table></figure></p>
+<p>再次输入npm config ls查看修改后的路径(cache和prefix的路径会发生变化)。如图<br><img src="https://upload-images.jianshu.io/upload_images/2759587-7e5258b97d032afd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查看迁移是否成功"></p>
+<p>####2.修改环境变量<br>新增环境变量 NODE_HOME,根据你迁移的目录<code>E:\nodejs\node_cache</code>，我这里是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">E:\nodejs</div></pre></td></tr></table></figure></p>
+<p>修改Path，增加这些<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%NODE_HOME%\;%NODE_HOME%\node_cache\;%NODE_HOME%\node_global\;</div></pre></td></tr></table></figure></p>
+<h4 id="3-测试是否完成"><a href="#3-测试是否完成" class="headerlink" title="3.测试是否完成"></a>3.测试是否完成</h4><p>重新打开一个cmd 执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install webpack -g</div></pre></td></tr></table></figure></p>
+<p>// -g是安装到全局目录下<br>安装完毕后打开设置的安装路径看下是否成功。node_global目录下应该有文件</p>
+<h3 id="cnpm（安装国内镜像）"><a href="#cnpm（安装国内镜像）" class="headerlink" title="cnpm（安装国内镜像）"></a>cnpm（安装国内镜像）</h3><p>在cmd中执行<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure></p>
+<p>执行完毕后在cmd中输入 <code>cnpm -v</code> 查看是否安装成功。<br>详细见淘宝npm – <a href="https://link.juejin.im?target=https%3A%2F%2Fnpm.taobao.org%2F" target="_blank" rel="external">npm.taobao.org/</a></p>
+<h3 id="WebStorm"><a href="#WebStorm" class="headerlink" title="WebStorm"></a>WebStorm</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>1.安装成功后，搜索/调出 <code>Terminal</code>窗口，依次输入 <code>npm -v</code>  回车，<code>cnpm -v</code>回车，查看是否都能使用。<strong>如果无法查看版本号，执行2，3步骤,否则无视</strong><br>2.如果检测有问题，可按下面方式修改：</p>
+<ul>
+<li>点击<code>File-&gt;setting</code>,输入<code>node</code>自动搜索。</li>
+<li>找到<code>node.js and NPM</code>后，配置右边的<code>Node interpreter</code>位置为你的<code>node.js</code>的安装目录。</li>
+<li>然后点击此行右边的…图标（3个点图标），修改 <code>Package manager</code> 目录为之前修改后的<code>node_modeles</code>目录。</li>
+<li>根据我在前面的修改，我在此处应填入的路径为E:\nodejs\node_global\node_modules</li>
+</ul>
+<p>3.保存后重启<code>webstrom</code>，再次输入 <code>npm -v</code> 回车，<code>cnpm -v</code>回车检测。</p>
+<h4 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Terminal窗口中输入 cnpm install 安装依赖，运行项目即可</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;windows配置一路流程：&quot;&gt;&lt;a href=&quot;#windows配置一路流程：&quot; class=&quot;headerlink&quot; title=&quot;windows配置一路流程：&quot;&gt;&lt;/a&gt;windows配置一路流程：&lt;/h2&gt;&lt;h3 id=&quot;Nodejs&quot;&gt;&lt;a href=&quot;
+    
+    </summary>
+    
+      <category term="Vue" scheme="http://scorpiocc.cn/categories/Vue/"/>
+    
+    
+      <category term="WebStorm" scheme="http://scorpiocc.cn/tags/WebStorm/"/>
+    
+      <category term="nodejs" scheme="http://scorpiocc.cn/tags/nodejs/"/>
+    
+  </entry>
   
   <entry>
     <title>亚马逊VPS服务器搭建</title>
@@ -69,7 +112,7 @@
     <link href="http://scorpiocc.cn/2017/06/12/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E3%80%90Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E3%80%91JAVA%20%E5%AF%B9%E8%B1%A1%E5%BA%8F%E5%88%97%E5%8C%96%E2%80%94%E2%80%94Serializable/"/>
     <id>http://scorpiocc.cn/2017/06/12/Java基础知识/【Java基础知识】JAVA 对象序列化——Serializable/</id>
     <published>2017-06-11T16:00:00.000Z</published>
-    <updated>2017-06-12T08:10:42.315Z</updated>
+    <updated>2017-06-12T08:10:42.316Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li><p>Java的对象序列化是指将那些实现了Serializable接口的对象转换成一个字符序列，并能够在以后将这个字节序列完全恢复为原来的对象。这一过程甚至可通过网络进行，这意味着序列化机制能自动弥补不同操作系统之间的差异。 只要对象实现了Serializable接口（记住，这个接口只是一个标记接口，不包含任何的方法</p>
@@ -234,7 +277,7 @@ local class serialVersionUID = 3419534311899376629
     <link href="http://scorpiocc.cn/2017/05/17/Hexo%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/Hexo%E7%9A%84Next%E4%B8%BB%E9%A2%98%E4%BE%A7%E8%BE%B9%E6%A0%8F%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/"/>
     <id>http://scorpiocc.cn/2017/05/17/Hexo博客教程/Hexo的Next主题侧边栏自定义修改/</id>
     <published>2017-05-16T16:00:00.000Z</published>
-    <updated>2017-06-30T03:22:02.915Z</updated>
+    <updated>2017-06-30T03:22:02.916Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next主题</a>的强大我就不多说了。侧边栏的标题和网站title标题相同，导致不能<code>自定义</code>。然后我就想着两者能不能分开，本文仅仅探讨<code>个人想法</code>。</p>
@@ -315,7 +358,7 @@ local class serialVersionUID = 3419534311899376629
     <link href="http://scorpiocc.cn/2017/05/04/Java%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91/Maven%E8%AD%A6%E5%91%8A%E8%A7%A3%E5%86%B3Using%20platform%20encoding%20(UTF-8%20actually)/"/>
     <id>http://scorpiocc.cn/2017/05/04/Java后台开发/Maven警告解决Using platform encoding (UTF-8 actually)/</id>
     <published>2017-05-03T16:00:00.000Z</published>
-    <updated>2017-06-30T02:26:33.659Z</updated>
+    <updated>2017-06-30T02:26:33.660Z</updated>
     
     <content type="html"><![CDATA[<h3 id="执行Maven-Install打包的时候，提示以下警告信息："><a href="#执行Maven-Install打包的时候，提示以下警告信息：" class="headerlink" title="执行Maven Install打包的时候，提示以下警告信息："></a>执行Maven Install打包的时候，提示以下警告信息：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!</div></pre></td></tr></table></figure>
 <h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>打开项目属性》Resources，按下图修改。 </p>
